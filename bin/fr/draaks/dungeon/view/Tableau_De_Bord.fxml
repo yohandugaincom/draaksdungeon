@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1100.0" styleClass="pane_hud" stylesheets="@../bib/menu/default.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="675.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label fx:id="Titre" text="Tableau de bord" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Aileron Bold" size="48.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="20.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <left>
+            <VBox alignment="CENTER" prefHeight="527.0" prefWidth="454.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="J1" alignment="CENTER" layoutX="30.0" layoutY="-8.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="Nom_Joueur" text="..." textFill="WHITE">
+                                 <font>
+                                    <Font name="Aileron Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="Joueur_Image" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" styleClass="ombre">
+                                 <image>
+                                    <Image url="@../bib/persos/Guerrier-D.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutY="-60.0" prefHeight="200.0" prefWidth="100.0" translateX="350.0" translateY="175.0">
+                           <children>
+                              <ImageView fx:id="Cercle1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="ombre">
+                                 <image>
+                                    <Image url="@../bib/general/circle.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="XP" text="XP" textFill="WHITE" translateY="-120.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="XP_Joueur" text="0" textFill="WHITE" translateY="-130.0">
+                                 <font>
+                                    <Font name="Aileron Bold" size="64.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutY="-60.0" prefHeight="200.0" prefWidth="100.0" translateX="350.0">
+                           <children>
+                              <ImageView fx:id="Cercle2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="ombre">
+                                 <image>
+                                    <Image url="@../bib/general/circle.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="Niveau" text="Niveau" textFill="WHITE" translateY="-120.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Niveau_Joueur" text="0" textFill="WHITE" translateY="-130.0">
+                                 <font>
+                                    <Font name="Aileron Bold" size="64.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="123.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" translateX="40.0">
+                     <image>
+                        <Image url="@../bib/general/Inventaire.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="138.0" layoutY="60.0" text="Mon inventaire" textFill="WHITE" translateX="40.0">
+                     <font>
+                        <Font name="Aileron Light" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="Item1" fitHeight="50.0" fitWidth="50.0" layoutX="197.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item2" fitHeight="50.0" fitWidth="50.0" layoutX="293.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item3" fitHeight="50.0" fitWidth="50.0" layoutX="386.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item4" fitHeight="50.0" fitWidth="50.0" layoutX="481.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item5" fitHeight="50.0" fitWidth="50.0" layoutX="198.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item6" fitHeight="50.0" fitWidth="50.0" layoutX="293.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item7" fitHeight="50.0" fitWidth="50.0" layoutX="386.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item8" fitHeight="50.0" fitWidth="50.0" layoutX="481.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item9" fitHeight="50.0" fitWidth="50.0" layoutX="198.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item10" fitHeight="50.0" fitWidth="50.0" layoutX="292.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item11" fitHeight="50.0" fitWidth="50.0" layoutX="386.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item12" fitHeight="50.0" fitWidth="50.0" layoutX="481.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item13" fitHeight="50.0" fitWidth="50.0" layoutX="198.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item14" fitHeight="50.0" fitWidth="50.0" layoutX="292.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item15" fitHeight="50.0" fitWidth="50.0" layoutX="386.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Item16" fitHeight="50.0" fitWidth="50.0" layoutX="481.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="1100.0" styleClass="hbox_barre_combat" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="PotionR_qty" layoutX="722.0" layoutY="62.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="ombre" />
+                        <String fx:value="hand" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="PotionV_qty" layoutX="799.0" layoutY="62.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="ombre" />
+                        <String fx:value="hand" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="PotionO_qty" layoutX="870.0" layoutY="62.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="ombre" />
+                        <String fx:value="hand" />
+                     </styleClass>
+                  </Label>
+                  <ImageView fx:id="Action1" fitHeight="50.0" fitWidth="50.0" layoutX="22.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action2" fitHeight="50.0" fitWidth="50.0" layoutX="86.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action3" fitHeight="50.0" fitWidth="50.0" layoutX="150.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action4" fitHeight="50.0" fitWidth="50.0" layoutX="214.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action5" fitHeight="50.0" fitWidth="50.0" layoutX="278.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action6" fitHeight="50.0" fitWidth="50.0" layoutX="342.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action7" fitHeight="50.0" fitWidth="50.0" layoutX="406.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action8" fitHeight="50.0" fitWidth="50.0" layoutX="470.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action9" fitHeight="50.0" fitWidth="50.0" layoutX="534.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Action10" fitHeight="50.0" fitWidth="50.0" layoutX="598.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../bib/combat/ActionLock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="250.0" layoutX="1017.0" layoutY="21.0" onMouseClicked="#btnContinuer" preserveRatio="true" AnchorPane.leftAnchor="1017.0" AnchorPane.topAnchor="21.0">
+                     <image>
+                        <Image url="@../bib/general/terminer.png" />
+                     </image>
+                     <styleClass>
+                        <String fx:value="hand" />
+                        <String fx:value="changeOpacite" />
+                     </styleClass>
+                  </ImageView>
+                  <ImageView fx:id="PotionR" fitHeight="50.0" fitWidth="63.0" layoutX="708.0" layoutY="15.0" preserveRatio="true" styleClass="ombre">
+                     <image>
+                        <Image url="@../bib/items/Potion-R.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="PotionV" fitHeight="50.0" fitWidth="63.0" layoutX="788.0" layoutY="15.0" preserveRatio="true" styleClass="ombre">
+                     <image>
+                        <Image url="@../bib/items/Potion-V.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="PotionO" fitHeight="50.0" fitWidth="63.0" layoutX="858.0" layoutY="15.0" preserveRatio="true" styleClass="ombre">
+                     <image>
+                        <Image url="@../bib/items/Potion-O.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Terminer" fitHeight="60.0" fitWidth="250.0" layoutX="937.0" layoutY="21.0" onMouseClicked="#btnTerminer" preserveRatio="true">
+                     <image>
+                        <Image url="@../bib/general/quit.png" />
+                     </image>
+                     <styleClass>
+                        <String fx:value="hand" />
+                        <String fx:value="changeOpacite" />
+                     </styleClass>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+      <ImageView fx:id="PAI_Joueur" fitHeight="25.0" fitWidth="200.0" layoutX="304.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" translateX="-80.0" translateY="80.0">
+         <image>
+            <Image url="@../bib/general/mana.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="PA_Joueur" layoutX="334.0" layoutY="174.0" styleClass="ombre" text="..." textFill="WHITE" translateX="-80.0" translateY="80.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="PV_Joueur" layoutX="334.0" layoutY="134.0" styleClass="ombre" text="..." textFill="WHITE" translateX="-80.0" translateY="80.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="PVH_Joueur" fitHeight="25.0" fitWidth="200.0" layoutX="304.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" translateX="-80.0" translateY="80.0">
+         <image>
+            <Image url="@../bib/general/pv.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

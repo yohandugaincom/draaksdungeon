@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1100.0" styleClass="pane_online" stylesheets="@../bib/menu/default.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="675.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="Titre" text="Bienvenue sur Draaks Online" textFill="WHITE">
+                     <font>
+                        <Font name="Aileron Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label text="Dépassez les limites de votre aventure." textFill="WHITE">
+                     <font>
+                        <Font name="Aileron Light" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../bib/online/speak.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Discutez de tout" textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="et de rien." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label text="Découvrez Draaks, un univers" textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="où petits et grands se côtoient." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Le monde nous paraît si petit." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <ImageView fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../bib/online/save.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Votre aventure" textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="partout, avec vous." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label text="Nous restons avec vous, même" textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="si vous nous oubliez chez vous." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Vos sauvegardes, avec nous." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                     <children>
+                        <ImageView fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../bib/online/success.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Vos amis," textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="vos meilleurs ennemis." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label text="Nous savons, que vous savez," textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="que vous êtes le meilleur." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Défiez vos amis." textFill="WHITE">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#commencerInscription" prefHeight="50.0" prefWidth="300.0" text="Enregistrer cet appareil" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="40.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom></BorderPane>
+   </children>
+</AnchorPane>

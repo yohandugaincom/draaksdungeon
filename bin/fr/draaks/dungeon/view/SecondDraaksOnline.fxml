@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1100.0" styleClass="pane_online" stylesheets="@../bib/menu/default.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="675.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox alignment="CENTER" prefHeight="161.0" prefWidth="1110.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="Titre" text="C'est presque terminé." textFill="WHITE">
+                     <font>
+                        <Font name="Aileron Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nous avons besoin d'en savoir un peu (très très peu) de vous, pour continuer." textFill="WHITE">
+                     <font>
+                        <Font name="Aileron Light" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <Button fx:id="Continuer" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#lancerInscription" prefHeight="50.0" prefWidth="300.0" text="Commencer une nouvelle aventure" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="40.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1100.0">
+                     <children>
+                        <TextField fx:id="Prenom_Inscription" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#verifierPrenomPseudo" prefWidth="400.0" promptText="Votre prénom">
+                           <font>
+                              <Font name="Aileron Light" size="30.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="Personnage_Nom" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#verifierPrenomPseudo" prefWidth="400.0" promptText="Votre pseudo">
+                           <font>
+                              <Font name="Aileron Light" size="30.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1100.0" translateY="50.0">
+                     <children>
+                        <Label text="Choisissez votre personnage  :" textFill="WHITE" translateY="10.0">
+                           <font>
+                              <Font name="Aileron Light" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ImageView fx:id="Guerrier" fitHeight="200.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#selectionPersonnage" onMouseEntered="#survolePersonnage" onMouseExited="#quitterSurvolePersonnage" opacity="0.5" preserveRatio="true" translateX="120.0" translateY="160.0">
+                     <image>
+                        <Image url="@../bib/persos/Guerrier-D.png" />
+                     </image>
+                     <styleClass>
+                        <String fx:value="ombre" />
+                        <String fx:value="hand" />
+                     </styleClass>
+                  </ImageView>
+                  <ImageView fx:id="Archer" fitHeight="200.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" onMouseClicked="#selectionPersonnage" onMouseEntered="#survolePersonnage" onMouseExited="#quitterSurvolePersonnage" opacity="0.5" preserveRatio="true" translateX="480.0" translateY="170.0">
+                     <image>
+                        <Image url="@../bib/persos/Archer-G.png" />
+                     </image>
+                     <styleClass>
+                        <String fx:value="ombre" />
+                        <String fx:value="hand" />
+                     </styleClass>
+                  </ImageView>
+                  <ImageView fx:id="Mage" fitHeight="200.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" onMouseClicked="#selectionPersonnage" onMouseEntered="#survolePersonnage" onMouseExited="#quitterSurvolePersonnage" opacity="0.5" preserveRatio="true" translateX="820.0" translateY="140.0">
+                     <image>
+                        <Image url="@../bib/persos/Mage-G.png" />
+                     </image>
+                     <styleClass>
+                        <String fx:value="ombre" />
+                        <String fx:value="hand" />
+                     </styleClass>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

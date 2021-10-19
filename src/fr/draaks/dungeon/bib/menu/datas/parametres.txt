@@ -1,0 +1,3 @@
+Musiques=1
+Bruitages=1
+Niveau=0

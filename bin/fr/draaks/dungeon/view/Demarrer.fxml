@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1100.0" styleClass="pane_choisir" stylesheets="@../bib/menu/default.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="675.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label text="Choisissez votre personnage" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Aileron Bold" size="48.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="20.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="Retour" mnemonicParsing="false" onAction="#revenirAccueil" text="Retour à l'accueil">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Continuer" mnemonicParsing="false" onMouseClicked="#lancer" text="Continuer" />
+               </children>
+            </HBox>
+         </bottom>
+         <left>
+            <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="200.0" onMouseClicked="#selectMage" pickOnBounds="true" preserveRatio="true" styleClass="selectPerso">
+                     <image>
+                        <Image url="@../bib/persos/Mage-D.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Le Mage" textFill="WHITE">
+                     <font>
+                        <Font name="Aileron Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="120.0" fitWidth="200.0" onMouseClicked="#selectArcher" pickOnBounds="true" preserveRatio="true" styleClass="selectPerso">
+                     <image>
+                        <Image url="@../bib/persos/Archer-D.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="L'Archer" textFill="WHITE">
+                     <font>
+                        <Font name="Aileron Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="120.0" fitWidth="200.0" onMouseClicked="#selectGuerrier" pickOnBounds="true" preserveRatio="true" styleClass="selectPerso">
+                     <image>
+                        <Image url="@../bib/persos/Guerrier-D.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Le Guerrier" textFill="WHITE">
+                     <font>
+                        <Font name="Aileron Light" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="358.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Renommez votre personnage :" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="Personnage_Nom" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#verifierNom" prefWidth="290.0" promptText="Nom de votre personnage" text="Le Mage">
+                     <font>
+                        <Font name="Aileron Bold" size="24.0" />
+                     </font>
+                  </TextField>
+                  <Label text="Chaque personnage évolue différemment." textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Choisissez-le bien dès maintenant !" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="300.0">
+                           <image>
+                              <Image url="@../bib/menu/pierre_choisir.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Personnage_Image" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" styleClass="ombre" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="120.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
